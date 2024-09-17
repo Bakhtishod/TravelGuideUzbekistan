@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Form</title>
+    <script src="js/hamburger.js" defer></script>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+</head>
+
+<body class="accessible">
+    <header>
+        <nav id="skip">
+            <h2 class="visually-hidden">Skip to the main content</h2>
+            <a href="#mainContent" class="visually-hidden-focusable">Skip to the main content</a>
+        </nav>
+        <div class="header-content">
+            <h1>Travel Guide Uzbekistan</h1>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" id="home-link">Home</a>
+                <a href="cities.html" id="cities-link">Cities</a>
+                <a href="nature.html" id="nature-link">Nature</a>
+                <a href="architecture.html" id="architecture-link">Architecture</a>
+                <a href="visit.html" class="active" id="visit-link">Visit Form</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="images/menus.png" alt="Menu">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="mainContent">
+            <h2>Visit Form</h2>
+            <form method="GET" action="mailto:bakhtishoddev@gmail.com" enctype="text/plain">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div>
+                    <label for="citizenship">Citizenship:</label>
+                    <br>
+                    <select id="citizenship" name="citizenship">
+                        <option value="at">Austria</option>
+                        <option value="be">Belgium</option>
+                        <option value="bg">Bulgaria</option>
+                        <option value="hr">Croatia</option>
+                        <option value="cy">Cyprus</option>
+                        <option value="cz">Czech Republic</option>
+                        <option value="dk">Denmark</option>
+                        <option value="ee">Estonia</option>
+                        <option value="fi">Finland</option>
+                        <option value="fr">France</option>
+                        <option value="de">Germany</option>
+                        <option value="gr">Greece</option>
+                        <option value="hu">Hungary</option>
+                        <option value="ie">Ireland</option>
+                        <option value="it">Italy</option>
+                        <option value="lv">Latvia</option>
+                        <option value="lt">Lithuania</option>
+                        <option value="lu">Luxembourg</option>
+                        <option value="mt">Malta</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="pl">Poland</option>
+                        <option value="pt">Portugal</option>
+                        <option value="ro">Romania</option>
+                        <option value="sk">Slovakia</option>
+                        <option value="si">Slovenia</option>
+                        <option value="es">Spain</option>
+                        <option value="se">Sweden</option>
+                        <option value="gb">United Kingdom</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Type of travel:</label><br>
+                    <input type="radio" id="trip_type_short" name="trip_type" value="short_term">
+                    <label for="trip_type_short">Short-term travel</label><br>
+                    <input type="radio" id="trip_type_long" name="trip_type" value="long_term">
+                    <label for="trip_type_long">Long-term travel</label>
+                </div>
+                <div>
+                    <label>Visa type:</label><br>
+                    <input type="radio" id="visa_type_free" name="visa_type" value="free">
+                    <label for="visa_type_free">Visa-Free</label><br>
+                    <input type="radio" id="visa_type_evisa" name="visa_type" value="evisa">
+                    <label for="visa_type_evisa">E-Visa</label>
+                </div>
+                <div>
+                    <label for="visit_reason">What encouraged you to visit Uzbekistan?</label>
+                    <br>
+                    <textarea id="visit_reason" name="visit_reason" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="privacy_agreement">
+                        <input type="checkbox" id="privacy_agreement" name="privacy_agreement" required>
+                        I have read and accept the Privacy Policy
+                    </label>
+                </div>
+                <br>
+                <div class="button-container">
+                    <button class="submit" type="submit">Submit</button>
+                    <button class="reset" type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer id="contact">
+        <div class="part-top">
+            <h2 class="visually-hidden">Social Media Links</h2>
+            <div class="socials">
+                <a href="https://facebook.com">
+                    <img src="./images/facebook.svg" alt="Facebook icon">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./images/twitter.svg" alt="Twitter icon">
+                </a>
+                <a href="https://telegram.com">
+                    <img src="./images/telegram.svg" alt="Telegram icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./images/instagram.svg" alt="Instagram icon">
+                </a>
+            </div>
+        </div>
+        <div class="part-bottom">
+            <p class="footer-text">
+                ©TGU. By Bakhtishod Umurzokov
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
